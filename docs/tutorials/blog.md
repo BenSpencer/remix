@@ -835,7 +835,7 @@ export default function NewPost() {
         </label>
       </p>
       <p>
-        <label htmlFor="markdown">Markdown:</label>
+        <label htmlFor="markdown">Markdown:{" "}</label>
         <br />
         <textarea
           id="markdown"
@@ -903,7 +903,7 @@ TypeScript is mad again, let's add some types.
 
 💿 Add the types to both files we changed
 
-```tsx filename=app/models/post.server.ts lines=[2,8]
+```tsx filename=app/models/post.server.ts lines=[2,3,8]
 // ...
 import type { Post } from "@prisma/client";
 export type { Post };
